@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Pixel Cat Hunt</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="stage">
+        <button id="stopBtn">■ Stop</button>
+        <canvas height="32" id="cat" width="32"></canvas>
+        <canvas height="16" id="mouse" width="16"></canvas>
+        <div id="hint">Move your cursor or tap on the field, the cat will hunt the mouse</div>
+        <div id="overlay">
+            <div class="card">
+                <h1>🐈‍⬛ Pixel Cat Hunt</h1>
+                <p>Click start, then move your cursor or tap. A small pixel-art cat will chase it like a toy mouse.</p>
+                <button id="startBtn">▶ Start the hunt</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

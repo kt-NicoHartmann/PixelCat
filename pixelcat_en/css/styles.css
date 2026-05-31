@@ -1,0 +1,128 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #1a1a24;
+	color: #e8e8f0;
+	font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+	overflow: hidden;
+}
+
+#stage {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	cursor: none;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	background:
+		radial-gradient(circle at 20% 20%, #2a2a3a 0%, #14141c 60%, #0a0a12 100%);
+}
+
+#stage::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image:
+		linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+	background-size: 24px 24px;
+	pointer-events: none;
+}
+
+#overlay {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(10, 10, 18, 0.85);
+	backdrop-filter: blur(4px);
+	z-index: 10;
+	cursor: default;
+}
+
+#overlay .card {
+	text-align: center;
+	padding: 32px 40px;
+	border: 1px solid #3a3a4e;
+	border-radius: 16px;
+	background: #1f1f2c;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+	max-width: 420px;
+}
+
+#overlay h1 {
+	margin: 0 0 8px;
+	font-size: 22px;
+	letter-spacing: 0.03em;
+}
+
+#overlay p {
+	margin: 0 0 20px;
+	font-size: 13px;
+	color: #a0a0b8;
+	line-height: 1.6;
+}
+
+#startBtn {
+	appearance: none;
+	border: none;
+	padding: 12px 28px;
+	font-family: inherit;
+	font-size: 14px;
+	border-radius: 10px;
+	cursor: pointer;
+	background: #ff7a59;
+	color: #1a1a24;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	transition: transform 0.15s, box-shadow 0.15s;
+}
+
+#startBtn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(255, 122, 89, 0.4);
+}
+
+#stopBtn {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	z-index: 5;
+	appearance: none;
+	border: 1px solid #3a3a4e;
+	background: rgba(31, 31, 44, 0.85);
+	color: #e8e8f0;
+	font-family: inherit;
+	font-size: 12px;
+	padding: 6px 12px;
+	border-radius: 8px;
+	cursor: pointer;
+	display: none;
+}
+
+#stopBtn:hover {
+	background: #2a2a3c;
+}
+
+canvas#cat,
+canvas#mouse {
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	will-change: transform;
+}
+
+#hint {
+	position: absolute;
+	bottom: 12px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 11px;
+	color: #6a6a82;
+	pointer-events: none;
+}

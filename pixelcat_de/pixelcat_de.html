@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Pixel-Katzenjagd</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="stage">
+        <button id="stopBtn">■ Stopp</button>
+        <canvas height="32" id="cat" width="32"></canvas>
+        <canvas height="16" id="mouse" width="16"></canvas>
+        <div id="hint">Bewege deinen Cursor oder tippe auf das Feld, die Katze wird die Maus jagen</div>
+        <div id="overlay">
+            <div class="card">
+                <h1>🐈‍⬛ Pixel-Katzenjagd</h1>
+                <p>Klicke auf Start, bewege dann deinen Cursor oder tippe. Eine kleine Pixel-Art-Katze wird ihn wie eine Spielzeugmaus jagen.</p>
+                <button id="startBtn">▶ Jagd starten</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

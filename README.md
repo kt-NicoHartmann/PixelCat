@@ -2,7 +2,9 @@
 
 A tiny pixel cat that lives in your browser and hunts your cursor like it's the last mouse on earth.
 
-[Live Demo](https://nicohartmann.dev/pixelcat_en.html) <img src="project_pixelcat_en.webp" alt="PixelCat" width="600">
+<img src="project_pixelcat_en.webp" alt="PixelCat" width="600">
+
+[Live Demo](https://nicohartmann.dev/pixelcat_en.html) 
 
 
 ## What is PixelCat?

@@ -48,7 +48,7 @@ git clone https://github.com/kt-NicoHartmann/PixelCat.git
 Navigate into the project directory and open the HTML file in your preferred web browser.
 
 ```bash
-cd PixelCat
+cd PixelCat/pixelcat_en
 # On macOS/Linux:
 open pixelcat_en.html
 # On Windows:

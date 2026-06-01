@@ -50,9 +50,9 @@ Navigate into the project directory and open the HTML file in your preferred web
 ```bash
 cd PixelCat
 # On macOS/Linux:
-open index.html
+open pixelcat_en.html
 # On Windows:
-start index.html
+start pixelcat_en.html
 ```
 
 Alternatively, use an extension like **Live Server** in VS Code to host it locally.
